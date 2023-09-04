@@ -1,0 +1,55 @@
+body {
+    margin: auto;
+}
+
+/* Parte superior */
+
+.parteSuperior {
+    border: 5px solid red;
+}
+
+.logo {
+    border: 1px solid black;
+    width: 10%;
+    text-align: center;
+    display: inline-block;
+}
+
+.menu {
+    border: 1px solid black;
+    display: inline-block;
+    width: 89%;
+    text-align: center;
+}
+
+/* Parte del medio */
+
+.parteMedio {
+    border: 5px solid blue;
+}
+
+.descarga {
+    border: 1px solid black;
+    
+    text-align: center;
+}
+
+.lorem {
+    border: 1px solid black;
+    
+    text-align: center;
+}
+
+.encuesta {
+    border: 1px solid black;
+    text-align: center;
+    
+}
+
+/* Gonorrea */
+
+.gonorrea {
+    border: 5px solid green;
+    text-align: center;
+    
+}
