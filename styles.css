@@ -9,16 +9,16 @@ body {
 }
 
 .logo {
-    border: 1px solid black;
-    width: 10%;
+    
+    width: 200px;
     text-align: center;
     display: inline-block;
 }
 
 .menu {
-    border: 1px solid black;
+    
     display: inline-block;
-    width: 89%;
+    width: 1200px;
     text-align: center;
 }
 
@@ -30,26 +30,26 @@ body {
 
 .descarga {
     border: 1px solid black;
-    
     text-align: center;
+    display: block;
 }
 
 .lorem {
     border: 1px solid black;
-    
     text-align: center;
+    display: block;
 }
 
 .encuesta {
     border: 1px solid black;
     text-align: center;
-    
+    display: block;
 }
 
-/* Gonorrea */
+/* El pie */
 
-.gonorrea {
+.footer {
     border: 5px solid green;
     text-align: center;
-    
+    display: block;
 }
