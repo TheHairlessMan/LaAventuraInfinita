@@ -1,55 +1,226 @@
-body {
-    margin: auto;
+*{
+    margin: 0;
+    padding: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+/* Lo agregue y cago a palos el descagar (Ver despues)*/
+
+body {
+    top: 0;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("./imagenes/IrF.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Amita', cursive;
+}
+
 
 /* Parte superior */
 
-.parteSuperior {
-    border: 5px solid red;
+#parteSuperior {
+    display: flex;
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
 }
 
-.logo {
-    
-    width: 200px;
-    text-align: center;
-    display: inline-block;
+#inicio {
+    height: 85px;
 }
+
+.menu img {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 100px;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
 
 .menu {
-    
-    display: inline-block;
-    width: 1200px;
+    position: fixed;
+    width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(61, 61, 61);
 }
+
+
+.menu a {
+    background-color: rgb(61, 61, 61);
+    border: none;
+    color: white;
+    padding: 17px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 15px 15px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.162), 0 6px 20px 0 rgba(0, 0, 0, 0.267);
+    text-shadow: -2px 1px rgba(0, 0, 0, 0.861);
+}
+
+
+.boton1:hover {
+    background-color: rgba(32, 31, 31, 0.879);
+}
+
+.boton2:hover {
+    background-color: rgba(32, 31, 31, 0.879);
+}
+
+
+.boton3:hover {
+    background-color: rgba(32, 31, 31, 0.879);
+}
+
+
+.boton4:hover {
+    background-color: rgba(32, 31, 31, 0.879);
+}
+
+
+.boton5:hover {
+    background-color: rgba(32, 31, 31, 0.879);
+}
+
+
 
 /* Parte del medio */
 
-.parteMedio {
-    border: 5px solid blue;
+/* Descaga */
+
+#descarga {
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 75px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: #0452c89f;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    border-color: rgb(255, 255, 255);
 }
 
-.descarga {
-    border: 1px solid black;
-    text-align: center;
-    display: block;
+
+#descarga:hover {
+    background-color: rgba(52, 49, 254, 0.824);
 }
 
-.lorem {
-    border: 1px solid black;
-    text-align: center;
-    display: block;
+
+#descarga a {
+    text-decoration: none;
+    color: white;
+    text-shadow: -2px 2px black;
+    height: 75px;
+    margin-top: 25px;
 }
 
-.encuesta {
-    border: 1px solid black;
+
+/* Lore */
+
+#lorem {
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 75px;
     text-align: center;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(61, 61, 61);
+    border-radius: 12px;
+    border: 2px solid rgb(255, 255, 255);
 }
+
+
+#lorem p {
+    color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    text-shadow: -1px 1px black;
+    
+}
+
+/* Formulario */
+
+#formulario {
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 75px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 8px;
+}
+
+
+.texto {
+    padding-bottom: 10px;
+    text-shadow: -2px 2px black;
+}
+
+
+.datos {
+    border-radius: 8px;
+    padding: 2px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.botonFormulario {
+    padding: 7px;
+    margin-top: 35px;
+    border-radius: 8px;
+}
+
+
+.pregunta {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-shadow: -2px 2px black;
+}
+
+
+.efectosEnemigo {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    border-radius: 8px;
+}
+
 
 /* El pie */
 
-.footer {
-    border: 5px solid green;
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 35px;
     text-align: center;
-    display: block;
+    display: inline-block;
+    bottom: 0;
+    background-color: rgb(61, 61, 61);
+    color: white;
 }
