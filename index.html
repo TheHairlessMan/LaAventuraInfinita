@@ -2,50 +2,93 @@
 <html lang="es">
 <head>
     <title>Pagina digregox adventure infinite</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+        </style>
+                
 </head>
 
 <body>
-
-    <section class="parteSuperior">
+    <header id="parteSuperior"> 
         <!-- div grandote de arriba -->
-        <div class="logo">
-            <!-- div del logo --> 
-            <h1>
-                Logo
-            </h1>
-        </div>
+        <div id="inicio"></div>
         
         <div class="menu">
+            <div class="logo"> 
+            <!-- div del logo --> 
+                <img src="./imagenes/logo.jpeg">  
+            </div>
             <!-- div del menu -->
-            <h2>Menu</h2>
+            <a class="boton1" sc href="#inicio"> INICIO </a>
+            <a class="boton2" sc href="#inicio"> DESCARGAR JUEGO </a>
+            <a class="boton4" sc href="#descarga"> LORE </a>
+            <a class="boton3" sc href="#formulario"> CREACION DE ENEMIGO </a>
+            <a class="boton5" sc href="#contacto"> CONTACTO </a>
         </div>
+        
+    </header>
 
-    </section>
-
-    <section class="parteMedio">
+    <section id="parteMedio">
         <!-- Div grandote medio  -->
-        <div class="descarga">
+
             <!-- liv descarga -->
-            <h1>descarga</h1>
+        <div id="descarga">
+
+            <a href="https://replit.com/@AgustinCasal/jueguitio-anashi?v=1">
+                <h1> DESCARGAR  </h1> 
+            </a>
+
         </div>
 
-        <div class="lorem">
+        <div id="lorem">
             <!-- div lorem ipsum -->
-            <h3>Lore</h3>
+            <p>
+
+                La aventura infinita es un juego RPG en el que con tu personaje, 
+                tendrás que derrotar muchas rondas de enemigos variados que cada vez se vuelven más grandes y poderosos ¿podrás contra ellos?
+            </p>
+            <br>
+            <p>
+                Un joven programador amante de los videojuegos y que soñaba con crear uno, estaba cansado de su trabajo, 
+                ya que en él, solo lo ponían a codificar programas aburridos y con poca emoción. 
+                Un día, luego de un monótono y cansado día de trabajo, decidió que iba a hacer realidad su sueño, por lo que se puso manos a la obra y empezó a crear su videojuego. 
+                Codificó y codificó hasta el cansancio, pero no era suficiente para detenerlo, quería cumplir su sueño, estaba decidido a hacerlo, 
+                pero de tanto sobre esforzarse y por todo el cansancio que llevaba, se terminó desmayando… y para cuando se despertó, 
+                ya no estaba en su casa frente a su computadora, estaba dentro del juego, que, al no estar terminado, no tenía fin…
+            </p>    
         </div>
 
-        <div class="encuesta"> 
-            <!-- div encuesta -->
-            <h2>Encuestra</h2>
+        <section id="formulario">
+            <h2 class="texto" >Creacion de enemigo</h2>
+
+            <input class="datos" type="text" name="nombreEnemigos" id="nombreEnemigos" placeholder="Ingrese el nombre del enemigo" required>
+            <input class="datos" type="number" name="vidaEnemigo" id="vidaEnemigo" placeholder="Ingrese la vida del enemigo" required>
+            <input class="datos" type="number" name="dañoEnemigo" id="dañoEnemigo" placeholder="Ingrese el daño del enemigo" required>
+
+            <h2 class="pregunta"> Que efecto va a aplicar el enemigo?</h2>
+            
+            <select class="efectosEnemigo">    
+                <option value='ningunEfecto'>Ningun Efecto</option>  
+                <option value='veneno'>Veneno</option>
+                <option value='quemadura'>Quemadrua</option>
+                <option value='paralisis'>Paralisis</option>
+                <option value='sueño'>Sueño</option>  
+            </select>
         </div>
+            
+            <input class="botonFormulario" type="submit" value="Subir enemigo creado">
+            
+        </section>
 
     </section>
 
-    <section class="footer">
-        <!-- Div de footer -->
-        <h4>Footer</h4>
-    </section>
+    <!-- Div de footer -->
+    <footer id="contacto">
+        sobre nosotros
+    </footer>
 
 </body>
 </html>
