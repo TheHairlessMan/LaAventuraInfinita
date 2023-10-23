@@ -6,7 +6,7 @@
 html {
     scroll-behavior: smooth;
 }
-/* Lo agregue y cago a palos el descagar (Ver despues)*/
+
 
 body {
     top: 0;
@@ -18,8 +18,8 @@ body {
     font-family: 'Amita', cursive;
 }
 
-
 /* Parte superior */
+
 
 #parteSuperior {
     display: flex;
@@ -189,6 +189,7 @@ body {
 
 
 .botonFormulario {
+    width: 200px;
     padding: 7px;
     margin-top: 35px;
     border-radius: 8px;
@@ -214,13 +215,31 @@ body {
 /* El pie */
 
 
-footer {
-    margin-top: 50px;
+.footer {
+    margin-top: 70px;
     width: 100%;
-    height: 35px;
+    height: 100%; 
     text-align: center;
-    display: inline-block;
     bottom: 0;
     background-color: rgb(61, 61, 61);
     color: white;
+
+}
+
+.footer h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logoColegio{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.logoGithub{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
 }
