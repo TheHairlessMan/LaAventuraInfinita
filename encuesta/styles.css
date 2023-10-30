@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    top: 0;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("./imagenes/IrF.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Amita', cursive;
+}
+
+#parteSuperior {
+    display: flex;
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+}
+
+
+#inicio {
+    height: 85px;
+}
+
+.menu img {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 100px;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+
+.menu {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(61, 61, 61);
+}
+
+.boton1{
+    border: solid 1px black;
+}
+
+/* Formulario */
+
+#formulario {
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 75px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 8px;
+}
+
+
+.texto {
+    padding-bottom: 10px;
+    text-shadow: -2px 2px black;
+}
+
+
+.datos {
+    border-radius: 8px;
+    padding: 2px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.botonFormulario {
+    width: 200px;
+    padding: 7px;
+    margin-top: 35px;
+    border-radius: 8px;
+}
+
+
+.pregunta {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-shadow: -2px 2px black;
+}
+
+
+.efectosEnemigo {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+
+/* El pie */
+
+
+.footer {
+    margin-top: 70px;
+    width: 100%;
+    height: 100%; 
+    text-align: center;
+    bottom: 0;
+    background-color: rgb(61, 61, 61);
+    color: white;
+
+}
+
+.footer h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logoColegio{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.logoGithub{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+}
