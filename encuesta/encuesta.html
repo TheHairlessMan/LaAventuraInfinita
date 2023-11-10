@@ -25,13 +25,18 @@
         </div>
         
     </header>
-<section id="formulario">
-    <h2 class="texto" >Creacion de enemigo</h2>
 
-    <input class="datos" type="text" name="nombreEnemigos" id="nombreEnemigos" placeholder="Ingrese el nombre del enemigo" required>
+<section>
+
+    <div class="formularioFlex">
+        <div id="formulario">
+
+            <h2 class="texto" >Creacion de enemigo</h2>
+            
+            <input class="datos" type="text" name="nombreEnemigos" id="nombreEnemigos" placeholder="Ingrese el nombre del enemigo" required>
     <input class="datos" type="number" name="vidaEnemigo" id="vidaEnemigo" placeholder="Ingrese la vida del enemigo" required>
     <input class="datos" type="number" name="dañoEnemigo" id="dañoEnemigo" placeholder="Ingrese el daño del enemigo" required>
-
+    
     <h2 class="pregunta"> Que efecto va a aplicar el enemigo?</h2>
     
     <select class="efectosEnemigo">    
@@ -43,20 +48,24 @@
     </select>
 
     <h2 class="pregunta"> Cuantos turnos va a durar el efecto?</h2>
-
+    
     <select class="efectosEnemigo">
-
-        <option value='turno1'>1 Turno</option>  
+        
+        <option value='turno1'>0 Turnos</option>
+        <option value='turno1'>1 Turno</option>    
         <option value='turno2'>2 Turnos</option>
         <option value='turno3'>3 Turnos</option>
         <option value='turno4'>4 Turnos</option>
         
     </select>
-
-
+    
+    
     <a href="https://thehairlessman.github.io/LaAventuraInfinita/encuesta/encuesta.html">
         <input class="botonFormulario" onclick="formulario()" type="submit" value="Subir enemigo creado">
     </a>
+    
+        </div>    
+    </div>
 </section>
 
 <footer id="contacto">
@@ -67,7 +76,7 @@
         <a href="https://gabidam.github.io/TecnicaN2.github.io/">
             <img class="logoColegio" src="./imagenes/images (1).jpeg">
         </a>
-
+        
         <a href="https://github.com/TheHairlessMan">  
             <img class="logoGithub" src="./imagenes/logoGithub.jpeg">
         </a>
