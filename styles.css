@@ -101,10 +101,17 @@ body {
 
 /* Descaga */
 
+.descargaFlex {
+    display: flex;
+    width: 98vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #descarga {
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-top: 75px;
+    width: 250px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -133,13 +140,18 @@ body {
 
 /* Lore */
 
-#lorem {
-    margin-left: 500px;
-    margin-right: 500px;
-    margin-top: 75px;
-    text-align: center;
+.loremFlex {
+    width: 98vw;
+    height: 50vh;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#lorem {
+    
+    width: 80vw;
+    text-align: center;
     background-color: rgb(61, 61, 61);
     border-radius: 12px;
     border: 2px solid rgb(255, 255, 255);
@@ -158,11 +170,15 @@ body {
 
 /* Formulario */
 
-
+.formularioFlex{
+    width: 98vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
 #formulario {
     width: 400px;
-    margin: auto;
-    margin-top: 75px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -187,50 +203,11 @@ body {
     background-color: rgba(32, 31, 31, 0.879);
 }
 
-/*
-.texto {
-    padding-bottom: 10px;
-    text-shadow: -2px 2px black;
-}
-
-
-.datos {
-    border-radius: 8px;
-    padding: 2px;
-    text-align: center;
-    margin-top: 10px;
-}
-
-
-.botonFormulario {
-    width: 200px;
-    padding: 7px;
-    margin-top: 35px;
-    border-radius: 8px;
-}
-
-
-.pregunta {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    text-shadow: -2px 2px black;
-}
-
-
-.efectosEnemigo {
-    display: flex;
-    flex-direction: column;
-    padding: 2px;
-    border-radius: 8px;
-}
-*/
 
 /* El pie */
 
 
 .footer {
-    margin-top: 100px;
     width: 100%;
     height: 100%; 
     text-align: center;
@@ -258,536 +235,127 @@ body {
     background-color: white;
 }
 
-@media (max-width: 404px){
-    div.boton1{
-        width: 20px;
+@media (pointer: coarse){
+
+    html{
+        margin: 0 0 0 0;
     }
-}*{
-    margin: 0;
-    padding: 0;
-}
 
-html {
-    scroll-behavior: smooth;
-}
+    body{
+        margin: 0 0 0 0;
+    }
 
+    /* parte arriba */
+    /* menu */
 
-body {
-    top: 0;
-    margin: 0px;
-    padding: 0px;
-    background-image: url("./imagenes/IrF.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Amita', cursive;
-}
+    div.menu{
+        top: 0;
+        height: 110px;
+        width: 100%;
+    }
 
-/* Parte superior */
+    div.menu img{
+        margin: 15px 0 0 0;
+        justify-content: center;
+    }
 
 
-#parteSuperior {
-    display: flex;
-    width: 100%;
-    margin-top: 0;
-    padding: 0;
-}
+    a.boton1 {
+        display: none;
+        padding-right: 30px;
+        height: 15px;
+        width: 15px;
+    }
 
-#inicio {
-    height: 85px;
-}
+    a.boton2 {
+        display: none;
+        padding-right: 30px;
+        height: 15px;
+        width: 15px;
+    }
 
-.menu img {
-    margin-top: 5px;
-    margin-left: 5px;
-    width: 100px;
-    height: 85px;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-}
+    a.boton4 {
+        display: none;
+        padding-right: 30px;
+        height: 15px;
+        width: 15px;
+    }
+    a.boton5 {
+        display: none;
+        padding-right: 30px;
+        height: 15px;
+        width: 15px;
+    }
 
+    /* parte medio */
 
-.menu {
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: rgb(61, 61, 61);
-}
+    div#parteMedio{
+        display: flex;
+        justify-content:center;
+    }
 
+    /* descarga */
 
-.menu a {
-    background-color: rgb(61, 61, 61);
-    border: none;
-    color: white;
-    padding: 17px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 15px 15px;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 8px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.162), 0 6px 20px 0 rgba(0, 0, 0, 0.267);
-    text-shadow: -2px 1px rgba(0, 0, 0, 0.861);
-}
+    div.descargaFlex{
+       height: 15vh;
+    }
 
+    div#descarga{
+        display: flex;
+        flex-direction: column;
+        margin: 100px 0px 0px 0px;
+        
+        justify-content: center;
+    }
 
-.boton1:hover {
-    background-color: rgba(32, 31, 31, 0.879);
-}
+    div#descarga a{
+        margin: 0px 0px 0px 0px;
+        justify-content: center;
+    }
 
-.boton2:hover {
-    background-color: rgba(32, 31, 31, 0.879);
-}
+    div#descarga h1{
+        padding-top: 15px;
+    }
 
+    /* lorem */
 
-.boton3:hover {
-    background-color: rgba(32, 31, 31, 0.879);
-}
-
-
-.boton4:hover {
-    background-color: rgba(32, 31, 31, 0.879);
-}
-
-
-.boton5:hover {
-    background-color: rgba(32, 31, 31, 0.879);
-}
-
-
-
-/* Parte del medio */
-
-/* Descaga */
-
-#descarga {
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-top: 75px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    border: 1px solid black;
-    background-color: #0452c89f;
-    transition-duration: 0.4s;
-    border-radius: 12px;
-    border-color: rgb(255, 255, 255);
-}
-
-
-#descarga:hover {
-    background-color: rgba(52, 49, 254, 0.824);
-}
-
-
-#descarga a {
-    text-decoration: none;
-    color: white;
-    text-shadow: -2px 2px black;
-    height: 75px;
-    margin-top: 25px;
-}
-
-
-/* Lore */
-
-#lorem {
-    margin-left: 500px;
-    margin-right: 500px;
-    margin-top: 75px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(61, 61, 61);
-    border-radius: 12px;
-    border: 2px solid rgb(255, 255, 255);
-}
-
-
-#lorem p {
-    color: white;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    font-size: 15px;
-    text-shadow: -1px 1px black;
+    div.loremFlex{
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
     
-}
-
-/* Formulario */
-
-
-#formulario {
-    width: 400px;
-    margin: auto;
-    margin-top: 75px;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(61, 61, 61);
-    color: white;
-    border: 2px solid rgb(255, 255, 255);
-    text-align: center;
-    border-radius: 8px;
-    transition-duration: 0.4s;
-}
-
-#formulario a {
-    transition-duration: 0.4s;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    margin: 10px ;
-
-}
-
-#formulario:hover {
-    background-color: rgba(32, 31, 31, 0.879);
-}
-
-/*
-.texto {
-    padding-bottom: 10px;
-    text-shadow: -2px 2px black;
-}
-
-
-.datos {
-    border-radius: 8px;
-    padding: 2px;
-    text-align: center;
-    margin-top: 10px;
-}
-
-
-.botonFormulario {
-    width: 200px;
-    padding: 7px;
-    margin-top: 35px;
-    border-radius: 8px;
-}
-
-
-.pregunta {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    text-shadow: -2px 2px black;
-}
-
-
-.efectosEnemigo {
-    display: flex;
-    flex-direction: column;
-    padding: 2px;
-    border-radius: 8px;
-}
-*/
-
-/* El pie */
-
-
-.footer {
-    margin-top: 100px;
-    width: 100%;
-    height: 100%; 
-    text-align: center;
-    bottom: 0;
-    background-color: rgb(61, 61, 61);
-    color: white;
-
-}
-
-.footer h4{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.logoColegio{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-}
-
-.logoGithub{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: white;
-}
-
-@media (max-width: 404px){
-    div.boton1{
-        width: 20px;
+    div#lorem{
+        margin: 0px 0px 0px 0px
     }
-}*{
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-
-body {
-    top: 0;
-    margin: 0px;
-    padding: 0px;
-    background-image: url("./imagenes/IrF.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Amita', cursive;
-}
-
-/* Parte superior */
-
-
-#parteSuperior {
-    display: flex;
-    width: 100%;
-    margin-top: 0;
-    padding: 0;
-}
-
-#inicio {
-    height: 85px;
-}
-
-.menu img {
-    margin-top: 5px;
-    margin-left: 5px;
-    width: 100px;
-    height: 85px;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-}
-
-
-.menu {
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: rgb(61, 61, 61);
-}
-
-
-.menu a {
-    background-color: rgb(61, 61, 61);
-    border: none;
-    color: white;
-    padding: 17px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 15px 15px;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 8px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.162), 0 6px 20px 0 rgba(0, 0, 0, 0.267);
-    text-shadow: -2px 1px rgba(0, 0, 0, 0.861);
-}
-
-
-.boton1:hover {
-    background-color: rgba(32, 31, 31, 0.879);
-}
-
-.boton2:hover {
-    background-color: rgba(32, 31, 31, 0.879);
-}
-
-
-.boton3:hover {
-    background-color: rgba(32, 31, 31, 0.879);
-}
-
-
-.boton4:hover {
-    background-color: rgba(32, 31, 31, 0.879);
-}
-
-
-.boton5:hover {
-    background-color: rgba(32, 31, 31, 0.879);
-}
-
-
-
-/* Parte del medio */
-
-/* Descaga */
-
-#descarga {
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-top: 75px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    border: 1px solid black;
-    background-color: #0452c89f;
-    transition-duration: 0.4s;
-    border-radius: 12px;
-    border-color: rgb(255, 255, 255);
-}
-
-
-#descarga:hover {
-    background-color: rgba(52, 49, 254, 0.824);
-}
-
-
-#descarga a {
-    text-decoration: none;
-    color: white;
-    text-shadow: -2px 2px black;
-    height: 75px;
-    margin-top: 25px;
-}
-
-
-/* Lore */
-
-#lorem {
-    margin-left: 500px;
-    margin-right: 500px;
-    margin-top: 75px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(61, 61, 61);
-    border-radius: 12px;
-    border: 2px solid rgb(255, 255, 255);
-}
-
-
-#lorem p {
-    color: white;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    font-size: 15px;
-    text-shadow: -1px 1px black;
     
-}
-
-/* Formulario */
-
-
-#formulario {
-    width: 400px;
-    margin: auto;
-    margin-top: 75px;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(61, 61, 61);
-    color: white;
-    border: 2px solid rgb(255, 255, 255);
-    text-align: center;
-    border-radius: 8px;
-    transition-duration: 0.4s;
-}
-
-#formulario a {
-    transition-duration: 0.4s;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    margin: 10px ;
-
-}
-
-#formulario:hover {
-    background-color: rgba(32, 31, 31, 0.879);
-}
-
-/*
-.texto {
-    padding-bottom: 10px;
-    text-shadow: -2px 2px black;
-}
-
-
-.datos {
-    border-radius: 8px;
-    padding: 2px;
-    text-align: center;
-    margin-top: 10px;
-}
-
-
-.botonFormulario {
-    width: 200px;
-    padding: 7px;
-    margin-top: 35px;
-    border-radius: 8px;
-}
-
-
-.pregunta {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    text-shadow: -2px 2px black;
-}
-
-
-.efectosEnemigo {
-    display: flex;
-    flex-direction: column;
-    padding: 2px;
-    border-radius: 8px;
-}
-*/
-
-/* El pie */
-
-
-.footer {
-    margin-top: 100px;
-    width: 100%;
-    height: 100%; 
-    text-align: center;
-    bottom: 0;
-    background-color: rgb(61, 61, 61);
-    color: white;
-
-}
-
-.footer h4{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.logoColegio{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-}
-
-.logoGithub{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: white;
-}
-
-@media (max-width: 404px){
-    div.boton1{
-        width: 20px;
+    div#lorem p{
+        font-size: 10px;
+        margin: 0px;
+    
     }
+
+    /* formulario */
+
+    div.formularioFlex{
+        height: 15vh;
+    }
+
+    div#formulario{
+        justify-content: center;
+        width: 75vw;
+        margin: 0px 0px 100px 0px;
+    }
+
+    div#formulario a{
+        margin: 0 0 0 0;
+    }
+
+    /* footer */
+
+    div.footer{
+        width: 100%;
+
+    }
+
 }
+
