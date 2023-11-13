@@ -226,6 +226,7 @@ body {
     width: 35px;
     height: 35px;
     border-radius: 50%;
+    text-decoration: none;
 }
 
 .logoGithub{
@@ -233,6 +234,7 @@ body {
     height: 35px;
     border-radius: 50%;
     background-color: white;
+    text-decoration: none;
 }
 
 @media (pointer: coarse){
@@ -358,4 +360,3 @@ body {
     }
 
 }
-
