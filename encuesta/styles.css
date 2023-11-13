@@ -1,4 +1,5 @@
 *{
+
     margin: 0;
     padding: 0;
 }
@@ -12,6 +13,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Amita', cursive;
+    overflow: hidden;
 }
 
 #parteSuperior {
@@ -49,9 +51,13 @@ body {
 
 /* Formulario */
 
+section{
+    width: 100vw;
+}
+
 div.formularioFlex{
     width: 100vw;
-    height: 100vh;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,17 +117,17 @@ div.formularioFlex{
 
 
 .footer {
-    width: 100%;
+    margin-top: 10px;
+    width: 100vw;
     height: 100%; 
     text-align: center;
     bottom: 0;
     background-color: rgb(61, 61, 61);
     color: white;
-
 }
 
 .footer h4{
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
 }
 
@@ -129,6 +135,7 @@ div.formularioFlex{
     width: 35px;
     height: 35px;
     border-radius: 50%;
+    text-decoration: none;
 }
 
 .logoGithub{
@@ -136,6 +143,7 @@ div.formularioFlex{
     height: 35px;
     border-radius: 50%;
     background-color: white;
+    text-decoration: none;
 }
 
 @media (pointer: coarse){
@@ -162,8 +170,14 @@ div.formularioFlex{
     }
 
 
+    div.formularioFlex{
+        margin-top: 30vh;
+        margin-bottom: 30vh;
+    }
+
+
 
     div.footer{
         width: 100%;
     }
-} 
+}  
